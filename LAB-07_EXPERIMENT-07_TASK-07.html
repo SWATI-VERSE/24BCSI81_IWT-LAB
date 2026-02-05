@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>TASK-07[FINAL ONE]</title>
+	</head>
+	<body>
+        <center>
+            <form name="fm1" method="POST" action="">
+                <table width="70%" height="800" border="0" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <td rowspan="10" width="45%">
+                            <img src="Doctor.png" height="600" width="100%">
+                        </td>
+                        <td colspan="2">
+                            <h1 align="center">Doctor Appointment Form</h1>
+		                    <hr color="red" width="100%" size="2">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="10%">Appointment Date</td>
+                        <td width="30%"><input Type="text" placeholder="dd-mm-yy" size="9" ></td>
+                    </tr>
+
+                    <tr>
+                        <td>Appointment Time</td>
+                        <td><input type="text" placeholder="--:--" size="2"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Name</td>
+                        <td>
+                            <input type="text" name="first_name" placeholder="First">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" name="last_name" placeholder="Last">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            Male<input type="radio" name="gender">
+                            Female<input type="radio" name="gender">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Phone</td>
+                        <td><input type="tel" placeholder="####"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Address</td>
+                        <td>
+                            <input type="text" name="state" placeholder="State">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" name="city" placeholder="City">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Your Query</td>
+                        <td>
+                            <textarea rows="4" cols="40"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td valign="top">Appointment Type</td>
+                        <td valign="top">Select with Appointment type(s) you require<br>
+                            <input type="checkbox" name="Cervix Checkup">Cervix Checkup<br>
+                            <input type="checkbox" name="Heart Checkup">Heart Checkup<br>
+                            <input type="checkbox" name="Eye Checkup">Eye Checkup<br>
+                            <input type="checkbox" name="Hearing Test">Hearing Test
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="Send">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+	</body>
+</html>
