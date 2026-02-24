@@ -1,0 +1,212 @@
+<html>
+	<head>
+		<title>LAB-11</title>
+		<style type="text/css">
+			.heading_row h1,
+			.heading_row h2,
+			.heading_row h3
+			{
+				display: inline;
+				margin-right: 10px;
+			}
+			
+			.span_block span
+			{
+				display: block;
+				margin-bottom: 10px;
+			}
+			
+			.page
+			{
+				min-height: 300px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.login_card
+			{
+				width: 400px;
+				height: 250px;
+				padding: 25px 20px 30px;
+				background-color: white;
+				border-radius: 10px;
+				box-shadow: 0px 0px 8px 1px silver;
+				text-align: center;
+			}
+			.input_box
+			{
+				width: 100%;
+				padding: 8px;
+				margin-bottom: 12px;
+				border: 1px solid gray;
+				border-radius: 4px;
+				font-size: 14px;
+				box-sizing: border-box;
+			}
+			.remember_row
+			{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 15px;
+				font-size: 14px;
+				font-weight: bold;
+			}
+			.login_button
+			{
+				width: 100%;
+				padding: 10px;
+				border: none;
+				border-radius: 4px;
+				background-color: green;
+				color: white;
+				font-size: 15px;
+				cursor: pointer;
+			}
+			
+			body
+			{
+				margin: 0;
+				font-family: Arial, sans-serif;
+			}
+
+			h2
+			{
+				text-align: center;
+				margin-top: 20px;
+			}
+
+			.products_container
+			{
+				max-width: 900px;
+				margin: 20px auto;
+				display: flex;
+				justify-content: center;
+				gap: 20px;
+			}
+
+			.product_card
+			{
+				border: 1px solid gray;
+				border-radius: 8px;
+				padding: 10px;
+				text-align: center;
+			}
+
+			.product_image
+			{
+				width: 250px;
+				height: 250px;
+				background-color: lightgray;
+				margin-bottom: 8px;
+			}
+
+			.product_card h3
+			{
+				margin: 5px 0;
+			}
+
+			.price
+			{
+				font-weight: bold;
+				margin: 5px 0;
+			}
+
+			.add_button
+			{
+				padding: 6px 10px;
+				border: none;
+				border-radius: 4px;
+				background-color: orange;
+				color: white;
+				cursor: pointer;
+				font-size: 13px;
+			}
+			
+			
+		</style>
+	</head>
+	
+	<body>
+		<h3><u>QUESTION-01</u></h3>
+		<div class="heading_row">
+			<h1>HTML</h1>
+			<h2>CSS</h2>
+			<h3>JavaScript</h3>
+		</div>
+		<br>
+		<div class="span_block">
+			<span>JSP</span>
+			<span>JDBC</span>
+			<span>MySQL</span>
+		</div>
+		<hr color="red" width="1500">
+		
+		<h3><u>QUESTION-02</u></h3>
+		<div class="page">
+			<div class="login_card">
+				<h1>Login</h1>
+
+				<form>
+					<input type="text" class="input_box" placeholder="Username">
+
+					<input type="password" class="input_box" placeholder="Password">
+
+					<div class="remember_row">
+						<input type="checkbox" id="remember">
+						<label for="remember">Remember Me</label>
+					</div>
+
+					<button type="submit" class="login_button">Login</button>
+				</form>
+			</div>
+		</div>
+		<br>
+		<hr color="red" width="1500">
+		
+		<h3><u>QUESTION-03</u></h3>
+		<div class="products_container">
+			<div class="product_card">
+		
+				<img src="Product-01.jpeg" alt="Product 1" class="product_image">
+
+				<h3>Huttis For Women</h3>
+				<p class="price">Price: ₹899</p>
+				<p>Short description of product 1.</p>
+				<button class="add_button">Add to Cart</button>
+			</div>
+
+			<div class="product_card">
+			
+				<img src="Product-02.jpeg" alt="Product 2" class="product_image">
+
+				<h3>Loreal Paris Infalliable Make-up Fixer</h3>
+				<p class="price">Price: ₹799</p>
+				<p>Short description of product 2.</p>
+				<button class="add_button">Add to Cart</button>
+			</div>
+
+			<div class="product_card">
+			
+				<img src="Product-03.jpeg" alt="Product 3" class="product_image">
+
+				<h3>Twisted Lies</h3>
+				<p class="price">Price: ₹1599</p>
+				<p>Short description of product 3.</p>
+				<button class="add_button">Add to Cart</button>
+			</div>
+
+			<div class="product_card">
+			
+				<img src="Product-04.jpeg" alt="Product 4" class="product_image">
+
+				<h3>STAZE-Lip Combo</h3>
+				<p class="price">Price: ₹399</p>
+				<p>Short description of product 4.</p>
+				<button class="add_button">Add to Cart</button>
+			</div>
+		</div>
+		<br>
+		<hr color="red" width="1500">
+	</body>
+</html>
