@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>abc</title>
+		<script>
+			function function1()
+			{
+				let a=document.getElementsByTagName("h1")[0].innerHTML="Welcome to Silicon";
+				let b=document.getElementById("heading1")[0].innerHTML="HELLO "
+			}
+			
+			function function2()
+			{
+				var name=document.getElementById("txt1").value;
+				document.write(name);
+			}
+			
+		</script>
+		
+	</head>
+	
+	<body>
+		<input type="button" type="text" value="clickme" onclick="function1()"></>
+		<h1 id="heading1">HELLO WORLD</h1>
+		
+		Name:<input type="text" id="txt1">
+		<input type="button" value="display" onclick="function2()">
+	</body>
+</html>

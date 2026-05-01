@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>DEMO-04</title>
+		<script>
+			function abc()
+			{
+				var a=document.getElementById("x").value;
+				if (a=="red")
+					document.bgColor="red";
+				else if (a=="green")
+					document.bgColor="green";
+				else if (a=="blue")
+					document.bgColor="blue";
+				else if (a=="yellow")
+					document.bgColor="yellow";
+				else if (a=="none")
+					document.bgColor="white";
+			}
+		</script>
+	</head>
+	
+	<body>
+		<select id="x" onchange="abc()">
+			<option value="none">NONE</option>
+			<option value="red">RED</option>
+			<option value="green">GREEN</option>
+			<option value="blue">BLUE</option>
+			<option value="yellow">YELLOW</option>
+		</select>
+	</body>
+</html>

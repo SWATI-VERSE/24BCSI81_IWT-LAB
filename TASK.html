@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Color Divisions</title>
+		<style>
+			.color-box
+			{
+				width: 200px;
+				height: 80px;
+				margin: 10px;
+				padding: 10px;
+				color: white;
+				font-family: Arial, sans-serif;
+			}
+		</style>
+
+		<script>
+			function showColor(btn)
+			{
+				var div=btn.parentNode;
+				var col=div.style.backgroundColor;
+				document.getElementById("result").innerHTML="COLOUR: "+col;
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="color-box" style="background-color: lavendarblush;">
+			DIVISION 1
+			<button onclick="showColor(this)">Show Color</button>
+		</div>
+
+		<div class="color-box" style="background-color: mistyrose;">
+		   DIVISION 2
+			<button onclick="showColor(this)">Show Color</button>
+		</div>
+
+		<div class="color-box" style="background-color: lightpink;">
+			DIVISION 3
+			<button onclick="showColor(this)">Show Color</button>
+		</div>
+
+		<div class="color-box" style="background-color: blue; color: black;">
+			DIVISION 4
+			<button onclick="showColor(this)">Show Color</button>
+		</div>
+	</body>
+</html>
