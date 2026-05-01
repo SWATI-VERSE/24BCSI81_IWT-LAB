@@ -1,0 +1,33 @@
+<h3>3. WAP using a while loop to reverse digits of a number and check if the number is a palindrome or not.</h3>
+
+<html>
+	<head>
+		<title>LAB-13_ASS-05_Q-03</title>
+
+		<script language="JavaScript">
+
+		var num, n, rev=0, rem;
+
+		n=parseInt(prompt("Enter a number:"));
+		num=n;
+
+		while(n>0)
+		{
+			rem=n%10;
+			rev=rev*10 + rem;
+			n=parseInt(n/10);
+		}
+
+		console.log("Reversed Number: "+rev);
+
+		if(num==rev)
+			console.log("It is a Palindromic Number..!!");
+		else
+			console.log("Not a Palindromic Number..!!");
+
+		</script>
+	</head>
+
+	<body bgcolor="orange" text="black">
+	</body>
+</html>

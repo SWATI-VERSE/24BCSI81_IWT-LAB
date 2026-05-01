@@ -1,0 +1,35 @@
+<h3>10. Write a Function that takes an array of numbers and returns two new arrays: one containing even numbers and one containing odd numbers.</h3>
+
+<html>
+	<head>
+		<title>LAB-13_ASS-05_Q-10</title>
+
+		<script language="JavaScript">
+
+		var a=[], even=[], odd=[];
+		var n, i;
+
+		n=parseInt(prompt("Enter the number of elements: "));
+
+		for(i=0;i<n;i++)
+		{
+			a[i]=parseInt(prompt("Enter element "+(i+1)+":"));
+		}
+
+		for(i=0;i<n;i++)
+		{
+			if(a[i]%2==0)
+				even[even.length]=a[i];
+			else
+				odd[odd.length]=a[i];
+		}
+
+		console.log("Even Numbers: "+even);
+		console.log("Odd Numbers: "+odd);
+
+		</script>
+	</head>
+
+	<body bgcolor="pink" text="black">
+	</body>
+</html>

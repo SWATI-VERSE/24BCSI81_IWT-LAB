@@ -1,0 +1,44 @@
+<h3>8. Write a function isPrime(num) that returns TRUE if the number is prime, otherwise false. Test with different numbers.</h3>
+
+<html>
+	<head>
+		<title>LAB-13_ASS-05_Q8</title>
+		<script language="JavaScript">
+
+		var num;
+
+		function isPrime(num)
+		{
+			var i;
+
+			if(num<=1)
+				return false;
+
+			for(i=2;i<num;i++)
+			{
+				if(num%i==0)
+				{
+					return false;
+				}
+			}
+
+			return true;
+		}
+		
+		console.log("2 is: "+isPrime(2));
+        console.log("8 is: "+isPrime(8));
+		
+		num=parseInt(prompt("Enter a number: "));
+
+		if(isPrime(num))
+			console.log(num+" is a Prime Number");
+		else
+			console.log(num+" is NOT a Prime Number");
+		
+		</script>
+	</head>
+	
+	<body bgcolor="lightblue" text="black">
+	</body>
+	
+</html>

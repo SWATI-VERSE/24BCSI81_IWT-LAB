@@ -1,0 +1,37 @@
+<h3>4. WAP to calculate and print the sum, average, largest and smallest of elements of an array.</h3>
+
+<html>
+	<head>
+		<title>LAB-13_ASS-05_Q-04</title>
+
+		<script language="JavaScript">
+		var a=new Array(10,20,30,40,50);
+		var sum=0, largest, smallest, i, avg;
+
+		largest=a[0];
+		smallest=a[0];
+
+		for(i=0;i<a.length;i++)
+		{
+			sum=sum+a[i];
+
+			if(a[i]>largest)
+				largest=a[i];
+
+			if(a[i]<smallest)
+				smallest=a[i];
+		}
+
+		avg=sum/a.length;
+
+		console.log("Sum: "+sum);
+		console.log("Average: "+avg);
+		console.log("Largest: "+largest);
+		console.log("Smallest: "+smallest);
+
+		</script>
+	</head>
+
+	<body bgcolor="pink" text="black">
+	</body>
+</html>

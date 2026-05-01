@@ -1,0 +1,44 @@
+<h3>11. Write a function reverseArray(arr) that reverses the elements of an array without using the built-in reverse() method.</h3>
+
+<html>
+	<head>
+		<title>LAB-13_ASS-05_Q-11</title>
+
+		<script language="JavaScript">
+			
+			var arr=[], rev=[], n, i;
+			
+			function reverseArray(arr)
+			{
+				var rev=[];
+				for (i=arr.length-1; i>=0; i--)
+				{
+					rev.push(arr[i]);
+				}
+				return rev;
+			}
+
+			n=parseInt(prompt("Enter the number of elements in an array:"));
+
+			for(i=0;i<n;i++)
+			{
+				value=prompt("Enter element "+(i+1)+":");
+				arr.push(value);
+			}
+
+			for(i=n-1;i>=0;i--)
+			{
+				rev[rev.length]=arr[i];
+			}
+
+			let res=reverseArray(arr);
+			
+			console.log("Original Array: "+arr);
+			console.log("Reversed array: "+res);
+		
+		</script>
+	</head>
+
+	<body bgcolor="lightblue" text="black">
+	</body>
+</html>

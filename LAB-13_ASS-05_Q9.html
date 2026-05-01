@@ -1,0 +1,41 @@
+<h3>9. Write a function to check whether a number is an Armstrong number.</h3>
+
+<html>
+	<head>
+		<title>LAB-13_ASS-05_Q-09</title>
+
+		<script language="JavaScript">
+
+		var num;
+
+		function isArmstrong(num)
+		{
+			var original=num, sum=0, rem;
+			var digits=num.toString().length;
+
+			while(num>0)
+			{
+				rem=num%10;
+				sum=sum+Math.pow(rem,digits);
+				num=parseInt(num/10);
+			}
+
+			if(sum==original)
+				return true;
+			else
+				return false;
+		}
+
+		num=parseInt(prompt("Enter a number:"));
+
+		if(isArmstrong(num))
+			console.log(num+" is an Armstrong Number.");
+		else
+			console.log(num+" is Not an Armstrong Number.");
+
+		</script>
+	</head>
+
+	<body bgcolor="orange" text="black">
+	</body>
+</html>

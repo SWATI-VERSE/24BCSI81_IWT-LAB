@@ -1,0 +1,32 @@
+<h3>7. Write a program to count how many times each element occurs in an array.</h3>
+
+<html>
+	<head>
+		<title>LAB-13_ASS-05_Q-07</title>
+
+		<script language="JavaScript">
+
+		var arr=[], n, i, j, count;
+		n=parseInt(prompt("Enter the number of elements in an array: "));
+		for(i=0;i<n;i++)
+		{
+			arr[i]=parseInt(prompt("Enter element "+(i+1)+":"));
+		}
+		
+		for(i=0;i<n;i++)
+		{
+			count=0;
+			for(j=0;j<n;j++)
+			{
+				if(arr[i]==arr[j])
+					count++;
+			}
+			document.write("<br>"+arr[i]+" occurs "+count+" times");
+		}
+		</script>
+	</head>
+
+	<body bgcolor="pink" text="black">
+	</body>
+	
+</html>

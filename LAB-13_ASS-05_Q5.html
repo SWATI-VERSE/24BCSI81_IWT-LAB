@@ -1,0 +1,39 @@
+<h3>5. WAP to find the second largest element of an array without sorting it.</h3>
+
+<html>
+	<head>
+		<title>LAB-13_ASS-05_Q-05</title>
+		<script language="JavaScript">
+
+		var a=new Array();
+		var n, i, largest, second;
+
+		n=parseInt(prompt("Enter number of elements: "));
+		for(i=0;i<n;i++)
+		{
+			a[i]=parseInt(prompt("Enter element "+(i+1)+":"));
+		}
+		largest=a[0];
+		second=a[0];
+		
+		for(i=0;i<n;i++)
+		{
+			if(a[i]>largest)
+				largest=a[i];
+		}
+
+		for(i=0;i<n;i++)
+		{
+			if(a[i]>second && a[i]<largest)
+				second=a[i];
+		}
+		
+		console.log("Array: "+a);
+		console.log("Second Largest: "+second);
+
+		</script>
+	</head>
+
+	<body bgcolor="lightblue" text="black">
+	</body>
+</html>

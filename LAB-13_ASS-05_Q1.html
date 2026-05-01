@@ -1,0 +1,29 @@
+<h3>1. WAP using if-else to assign grades based on marks: >=90 -> Grade A; >=75 -> Grade B; >=50 -> Grade C; <50 -> Fail</h3>
+
+<html>
+	<head>
+		<title>LAB-13_ASS-05_Q-01</title>
+
+		<script language="JavaScript">
+
+		var marks, grade;
+
+		marks=parseInt(prompt("Enter marks: "));
+
+		if(marks>=90)
+			grade="Grade A";
+		else if(marks>=75)
+			grade="Grade B";
+		else if(marks>=50)
+			grade="Grade C";
+		else
+			grade="Fail";
+
+		document.write("Grade: "+grade);
+
+		</script>
+	</head>
+
+	<body bgcolor="pink" text="black">
+	</body>
+</html>

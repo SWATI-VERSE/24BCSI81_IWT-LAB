@@ -1,0 +1,36 @@
+<h3>12. Write a function generateFunction(n) that generates the first n Fibonacci numbers and returns them in an array.</h3>
+
+<html>
+	<head>
+		<title>LAB-13_ASS-05_Q-12</title>
+
+		<script language="JavaScript">
+			function generateFunction(n)
+			{
+				var a=0, b=1, c, i;
+				var fib=[];
+
+				for(i=1; i<=n; i++)
+				{
+					fib.push(a);
+					c=a+b;
+					a=b;
+					b=c;
+				}
+
+				return fib;
+			}
+
+			var n=parseInt(prompt("Enter the number of terms: "));
+
+			var res=generateFunction(n);
+
+			console.log("Fibonacci Series: "+res);
+			
+		</script>
+	</head>
+
+	<body bgcolor="orange" text="black">
+	</body>
+	
+</html>
