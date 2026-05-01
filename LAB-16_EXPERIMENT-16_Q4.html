@@ -1,0 +1,39 @@
+<h3>4. Create a simple Counter with an input box and two buttons: + and - . + increases the value by 1. - decreases the value by 1(not below zero).</h3>
+
+<html>
+	<head>
+		<title>LAB-16_Q4</title>
+
+		<script>
+			function incrementValue()
+			{
+				var n=document.getElementById("txt1").value;
+				n=parseInt(n);
+				n=n+1;
+				document.getElementById("txt1").value=n;
+			}
+
+			function decrementValue()
+			{
+				var n=document.getElementById("txt1").value;
+				n=parseInt(n);
+
+				if (n>0)
+				{
+					n=n-1;
+					document.getElementById("txt1").value=n;
+				}
+			}
+		</script>
+
+	</head>
+
+	<body>
+
+		<input type="text" id="txt1" value="0">
+
+		<input type="button" value="+" onclick="incrementValue()">
+		<input type="button" value="-" onclick="decrementValue()">
+
+	</body>
+</html>

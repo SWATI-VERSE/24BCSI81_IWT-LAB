@@ -1,0 +1,36 @@
+<h3>2. Write a paragraph of text and a button. When the button is clicked, toggle the visibility of the paragraph(show -> hide -> show). Change the button text accordingly.</h3>
+
+<html>
+	<head>
+		<title>LAB-16_Q2</title>
+
+		<script>
+			var flag=1;
+
+			function paragraphToggle()
+			{
+				if (flag==1)
+				{
+					document.getElementById("p1").innerHTML = "";
+					document.getElementById("btn1").value = "Show";
+					flag=0;
+				}
+				else
+				{
+					document.getElementById("p1").innerHTML = "This is a sample paragraph text. \n Click the button to hide or show the text.";
+					document.getElementById("btn1").value = "Hide";
+					flag=1;
+				}
+			}
+		</script>
+
+	</head>
+
+	<body>
+
+		<p id="p1">This is a paragraph text. <br> Click the below button to hid or show the text.</p>
+
+		<input type="button" id="btn1" value="Hide" onclick="paragraphToggle()">
+
+	</body>
+</html>

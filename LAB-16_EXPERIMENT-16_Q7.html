@@ -1,0 +1,98 @@
+<h3>7. Create a registration form with fields for – Name, Gender (radio button), Mobile, Address (textarea), Country (dropdown), Email, and Password. Use external JS to apply form validation to check –
+<br>(a) None of the fields should be empty.
+<br>(b) Mobile number should be a 10-digit valid mobile number.
+<br>(c) Email should have a valid format.
+<br>(d) Length of the password must be between 6–15.
+
+</h3>
+
+<html>
+	<head>
+		<title>LAB-16_Q7</title>
+		<style>
+			body
+			{
+				font-family: Arial, sans-serif;
+				background: lightgray;
+			}
+			.form-box
+			{
+				width: 350px;
+				margin: 40px auto;
+				padding: 20px;
+				background: white;
+				border: 1px solid black;
+			}
+			.form-box h2
+			{
+				text-align: center;
+			}
+			.form-box label
+			{
+				display: block;
+				margin-top: 10px;
+			}
+			.form-box input, .form-box textarea, .form-box select
+			{
+				width: 100%;
+				padding: 6px;
+				box-sizing: border-box;
+			}
+			.form-box button
+			{
+				width: 100%;
+				margin-top: 15px;
+				padding: 8px;
+				background: black;
+				color: white;
+				border: none;
+				cursor: pointer;
+			}
+			.error
+			{
+				color: red;
+				margin-top: 8px;
+			}
+			
+		</style>
+		<script src="validation.js"></script>
+		
+	</head>
+	<body>
+		<div class="form-box">
+			<h2>Registration Form</h2>
+			<form id="regForm" onsubmit="return validateForm()">
+				<label for="name">Name:</label>
+				<input type="text" id="name">
+
+				<label>Gender:</label>
+				<input type="radio" name="gender" value="Male"> Male
+				<input type="radio" name="gender" value="Female"> Female
+
+				<label for="mobile">Mobile:</label>
+				<input type="text" id="mobile">
+
+				<label for="address">Address:</label>
+				<textarea id="address"></textarea>
+
+				<label for="country">Country:</label>
+				<select id="country">
+					<option value="">--Select--</option>
+					<option value="India">India</option>
+					<option value="USA">USA</option>
+					<option value="UK">UK</option>
+					<option value="Australia">Australia</option>
+				</select>
+
+				<label for="email">Email:</label>
+				<input type="text" id="email">
+
+				<label for="password">Password:</label>
+				<input type="password" id="password">
+
+				<button type="submit">Register</button>
+				<div id="errorMsg" class="error"></div>
+			</form>
+		</div>
+	</body>
+</html>
